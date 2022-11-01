@@ -4,7 +4,7 @@ import Moment from 'moment'
 const Date = () => {
   return (
     <div className="currentDate">
-        <input type="date" min="02-11-2022"/>
+        <input type="date" min="02-11-202a2"/>
     </div>
   )
 }

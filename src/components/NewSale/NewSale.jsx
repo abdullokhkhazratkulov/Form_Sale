@@ -1,11 +1,9 @@
 import Modal from 'react-modal';
 import React, {useState} from 'react'
-import Employee from './inputs/Employee';
-import Date from './inputs/Date';
-
+import useInput from '../../hooks/useInput';
+import AllInputs from './inputs/AllInputs'
 const NewSale = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
-
     const openModal = () => {
         setIsOpen(true);
     }
@@ -16,12 +14,13 @@ const NewSale = () => {
     <div className="new_sale">
         <button onClick={openModal}> Add New Sale</button>
         <Modal isOpen={modalIsOpen} ariaHideApp={true}>
-            <Date />
-            <Employee />
-            <button onClick={closeModal}>x</button>
+            <form>    
+                <AllInputs />
+                <button onClick={closeModal}>x</button>
+            </form>
         </Modal>
     </div>
   )
 }
-
+Modal.setAppElement('body');
 export default NewSale

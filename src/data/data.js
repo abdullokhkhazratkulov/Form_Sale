@@ -4,7 +4,7 @@ const productData = [
         employeeName: 'Olimjon',
         clientName: 'Abdullajon',
         productName: 'Hp Laptop',
-        wholesalePrice: 50000,
+        amount: 50000,
         price: 5000        
     },
     {
@@ -12,23 +12,23 @@ const productData = [
         employeeName: 'Akmal',
         clientName: 'Ali',
         productName: 'Iphone',
-        wholesalePrice: 10000,
+        amount: 10000,
         price: 500        
     },
     {
         id: 3,
         employeeName: 'Aziz',
         clientName: 'Javlon',
-        productName: 'Samsung Galaxy',
-        wholesalePrice: 5000,
+        productName: 'Samsung Galaxy S21',
+        amount: 5000,
         price: 300        
     },
     {
         id: 4,
         employeeName: 'Murod',
         clientName: 'Javlon',
-        productName: 'Samsung Galaxy',
-        wholesalePrice: 5000,
+        productName: 'Samsung Galaxy S22 Ultra SUper Pro MAX',
+        amount: 5000,
         price: 300        
     }
 ]

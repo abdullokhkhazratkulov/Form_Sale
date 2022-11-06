@@ -1,7 +1,8 @@
 import Modal from 'react-modal';
 import React, {useState} from 'react'
-import useInput from '../../hooks/useInput';
-import AllInputs from './inputs/AllInputs'
+import Employee from './inputs/Employee';
+import Client from './inputs/Client';
+import Products from './inputs/Products';
 const NewSale = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
     const openModal = () => {
@@ -15,7 +16,9 @@ const NewSale = () => {
         <button onClick={openModal}> Add New Sale</button>
         <Modal isOpen={modalIsOpen} ariaHideApp={true}>
             <form>    
-                <AllInputs />
+                <Employee />
+                <Client />
+                <Products />
                 <button onClick={closeModal}>x</button>
             </form>
         </Modal>

@@ -1,41 +1,20 @@
-import React, {useState} from 'react'
-import productData from '../../../data/data'
-
-const Employee = ({bind}) => {
-    const [value, setValue] = useState("");
-    const onSearch = (searchTerm) => {
-        setValue(searchTerm);
-    };
+import React from 'react'
+import Select from 'react-select';
+import { employeesName } from '../../../data/data';
+const Employee = () => {
+    const employeesOptions = employeesName.map(employee => {
+        return{
+            label: employee.employeeName,
+            value: employee.id
+        }
+    })
   return (
-    <div className="employee">
-        <input
-            className="search"
-            placeholder="Employee..."
-            value={value ? value : bind.value}
-            onChange={bind.onChange}
-        />
-        <div className="dropdown">
-            {productData
-                .filter((product) => {
-                const searchTerm = bind.value?.toLowerCase();
-                const employeeName = product.employeeName.toLowerCase();
-                return (
-                    searchTerm &&
-                    employeeName.startsWith(searchTerm) &&
-                    employeeName !== searchTerm
-                );
-                })
-                .map((product) => (
-                <div
-                    onClick={() => onSearch(product.employeeName)}
-                    className="dropdown-row"
-                    key={product.employeeName}
-                >
-                    {product.employeeName}
-                </div>
-            ))}
-        </div>
+    <div className="input-group mb-2 align-items-center">
+        <Select className="search mt-2 col-md-2 col-offset-4" isClearable placeholder='Employee...' options={employeesOptions} /> 
+        <button class="btn btn-outline-secondary mt-2 w-36" type="button" id="button-addon">ADD</button>
+        <button class="btn btn-outline-secondary mt-2 w-36" type="button" id="button-addon">Edit</button>
     </div>
+    
   )
 }
 

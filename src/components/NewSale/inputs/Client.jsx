@@ -1,41 +1,18 @@
-import React, {useState} from 'react'
-import productData from '../../../data/data'
-
-const Client = ({bind}) => {
-    const [value, setValue] = useState("");
-    const onSearch = (searchTerm) => {
-        setValue(searchTerm);
-    };
+import React from 'react'
+import Select from 'react-select';
+import { clientsName } from '../../../data/data';
+const Client = () => {
+    const clientsOptions = clientsName.map(client => {
+        return{
+            label: client.clientName,
+            value: client.id
+        }
+    })
   return (
     <div className="client">
-        <input
-            className="search"
-            placeholder="Client Name..."
-            value={value ? value : bind.value}
-            onChange={bind.onChange}
-        />
-            <div className="dropdown">
-                {productData
-                    .filter((product) => {
-                    const searchTerm = bind.value?.toLowerCase();
-                    const clientName = product.clientName.toLowerCase();
-                    return (
-                        searchTerm &&
-                        clientName.startsWith(searchTerm) &&
-                        clientName !== searchTerm
-                    );
-                    })
-                    .map((product) => (
-                    <div
-                        onClick={() => onSearch(product.clientName)}
-                        className="dropdown-row"
-                        key={product.clientName}
-                    >
-                        {product.clientName}
-                    </div>
-                ))}
-            </div>
+        <Select className="search mt-2 col-md-2 col-offset-4" isClearable placeholder='Client...'  options={clientsOptions} />
     </div>
+    
   )
 }
 

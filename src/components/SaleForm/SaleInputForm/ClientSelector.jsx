@@ -1,7 +1,7 @@
 import React from 'react'
 import Select from 'react-select';
 import { clientsName } from '../../../data/data';
-const Client = () => {
+const ClientSelector = () => {
     const clientsOptions = clientsName.map(client => {
         return{
             label: client.clientName,
@@ -10,10 +10,10 @@ const Client = () => {
     })
   return (
     <div className="client">
-        <Select className="search mt-2 col-md-2 col-offset-4" isClearable placeholder='Client...'  options={clientsOptions} />
+        <Select className="search mt-2 col-offset-4" isClearable placeholder='Client...'  options={clientsOptions} />
     </div>
     
   )
 }
 
-export default Client
+export default ClientSelector

@@ -1,4 +1,4 @@
-export const productsName = [
+const productsName = [
     {
         id: 1,
         productName: 'Hp Laptop',
@@ -29,7 +29,7 @@ export const productsName = [
     }
 ]
 
-export const employeesName = [
+const employeesName = [
     {
         id: 1,
         employeeName: 'Olimjon',
@@ -48,7 +48,7 @@ export const employeesName = [
     }
 ]
 
-export const clientsName = [
+const clientsName = [
     {
         id: 1,
         clientName: 'Abdullajon',
@@ -67,5 +67,5 @@ export const clientsName = [
     },
 ]
 
-
+export {productsName,employeesName,clientsName}
 

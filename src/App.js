@@ -1,4 +1,4 @@
-import NewSale from "./components/NewSale/NewSale";
+import NewSale from "./components/NewSale";
 
 function App() {
   return (

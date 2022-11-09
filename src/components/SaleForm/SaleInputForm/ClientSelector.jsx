@@ -1,5 +1,4 @@
 import React from 'react'
-import Select from 'react-select';
 import { clientsName } from '../../../data/data';
 const ClientSelector = () => {
     const clientsOptions = clientsName.map(client => {
@@ -10,7 +9,7 @@ const ClientSelector = () => {
     })
   return (
     <div className="client">
-        <Select className="search mt-2 col-offset-4" isClearable placeholder='Client...'  options={clientsOptions} />
+        <select className="search mt-2 col-offset-4 form-control" isClearable placeholder='Client...'  options={clientsOptions} />
     </div>
     
   )

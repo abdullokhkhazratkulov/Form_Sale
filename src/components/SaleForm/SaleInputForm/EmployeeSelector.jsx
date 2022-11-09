@@ -1,5 +1,5 @@
 import React from 'react'
-import Select from 'react-select';
+// import Select from 'react-select';
 import { employeesName } from '../../../data/data';
 const EmployeeSelector = () => {
     const employeesOptions = employeesName.map(employee => {
@@ -11,7 +11,7 @@ const EmployeeSelector = () => {
 
   return (
     <div className="employee">
-        <Select className="search mt-2 col-offset-4" isClearable placeholder='Employee...' options={employeesOptions}/> 
+        <select className="search mt-2 col-offset-4 form-control" isClearable placeholder='Employee...' options={employeesOptions}/> 
     </div>
     
   )

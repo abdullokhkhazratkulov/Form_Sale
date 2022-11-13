@@ -1,28 +1,28 @@
 const productsName = [
     {
         id: 1,
-        productName: 'Hp Laptop',
+        name: 'Hp Laptop',
         amount: 500,
         wholesalePrice: 490000,
         price: 5000        
     },
     {
         id: 2,
-        productName: 'Iphone',
+        name: 'Iphone',
         amount: 100,
         wholesalePrice: 49000,
         price: 500        
     },
     {
         id: 3,
-        productName: 'Samsung Galaxy S21',
+        name: 'Samsung Galaxy S21',
         amount: 60,
         wholesalePrice: 29000,
         price: 300        
     },
     {
         id: 4,
-        productName: 'Samsung Galaxy S22 Ultra SUper Pro MAX',
+        name: 'Samsung Galaxy S22 Ultra SUper Pro MAX',
         amount: 50,
         wholesalePrice: 29000,
         price: 300        
@@ -32,40 +32,39 @@ const productsName = [
 const employeesName = [
     {
         id: 1,
-        employeeName: 'Olimjon',
+        name: 'Olimjon',
     },
     {
         id: 2,
-        employeeName: 'Akmal',
+        name: 'Akmal',
     },
     {
         id: 3,
-        employeeName: 'Aziz',
+        name: 'Aziz',
     },
     {
         id: 4,
-        employeeName: 'Murod',
+        name: 'Murod',
     }
 ]
 
 const clientsName = [
     {
         id: 1,
-        clientName: 'Abdullajon',
+        name: 'Abdullajon',
     },
     {
         id: 2,
-        clientName: 'Ali',
+        name: 'Ali',
     },
     {
         id: 3,
-        clientName: 'Javlon',
+        name: 'Javlon',
     },
     {
         id: 4,
-        clientName: 'Javohir',
+        name: 'Javohir',
     },
 ]
-
 export {productsName,employeesName,clientsName}
 

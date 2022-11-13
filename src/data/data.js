@@ -8,14 +8,14 @@ const productsName = [
     },
     {
         id: 2,
-        name: 'Iphone',
+        name: 'Iphone XS',
         amount: 100,
         wholesalePrice: 49000,
         price: 500        
     },
     {
         id: 3,
-        name: 'Samsung Galaxy S21',
+        name: 'Huawei',
         amount: 60,
         wholesalePrice: 29000,
         price: 300        
@@ -25,7 +25,7 @@ const productsName = [
         name: 'Samsung Galaxy S22 Ultra SUper Pro MAX',
         amount: 50,
         wholesalePrice: 29000,
-        price: 300        
+        price: 700        
     }
 ]
 

@@ -117,7 +117,7 @@ const SaleFormInputs = () => {
                 <input type="number" className='form-control' placeholder='Цена' {...register("price")} />
               </div>
               <div className="col-2">
-                <label >Amount</label>
+                <label >Quantity</label>
                 <input type="number" className='form-control'  placeholder='Введите количество' {...register("product")}/>
               </div>
             </div>
